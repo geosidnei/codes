@@ -1,34 +1,36 @@
 /*aula 14 - 8/ago/2019
-Criando as próprias funções
-1° programa
-É legal dividir o programa por funções
-para reaproveitar código e
+Criando as prÃ³prias funÃ§Ãµes
+1Â° programa
+Ã‰ legal dividir o programa por funÃ§Ãµes
+para reaproveitar cÃ³digo e
 dividir grandes problemas em problemas mais simples;
-isso traz uma série de vantagens
+isso traz uma sÃ©rie de vantagens
 */
 
 #include <iostream>
+#include <locale>
 
 using namespace std;
 
-bool par(int num) //nossa função//
+bool par(int num) //nossa funÃ§Ã£o//
 {
 	if (num %2 ==0)
 	   	return true;
 	return false;   	
 }
 
-int main(int argc, char *argv[])//função principal
+int main(int argc, char *argv[])//funÃ§Ã£o principal
 {
+	setlocale(LC_ALL, "Portuguese");
 	int n;
 	
-	cout <<"digite um numero"<<endl;
+	cout <<"Digite um nÃºmero...\n"<<endl;
 	cin >> n;
-	cout<<" ";
-	if (par(n))//chamou a nossa função "par"
-		cout <<"o numero " << n << " eh par!" <<endl;
+	//cout<<" ";
+	if (par(n))//chamou a nossa funÃ§Ã£o "par"
+		cout <<"\nO nÃºmero " << n << " Ã© par!" <<endl;
 	else
-	   	cout <<"o numero " << n << " eh impar!" <<endl;
+	   	cout <<"\nO nÃºmero " << n << " Ã© Ã­mpar!" <<endl;
 	
 	return 0;
 }
