@@ -1,34 +1,35 @@
 /*aula 14b - 8/ago/2019
-Criando as próprias funções
-2° programa: outra forma de escrever a função
-É legal dividir o programa por funções
-para reaproveitar código e
+Criando as prÃ³prias funÃ§Ãµes
+2Â° programa: outra forma de escrever a funÃ§Ã£o
+Ã‰ legal dividir o programa por funÃ§Ãµes
+para reaproveitar cÃ³digo e
 dividir grandes problemas em problemas mais simples
-que traz uma série de vantagens
+que traz uma sÃ©rie de vantagens
 
 */
 
 #include <iostream>
+#include <locale>
 
 using namespace std;
 
-bool par(int num);//protótipo da função que avisa ao compilador que ela existe/
-void mensagem(); //função vazia: só para imprimir uma mensagem. 
+bool par(int num);//protÃ³tipo da funÃ§Ã£o que avisa ao compilador que ela existe/
+void mensagem(); //funÃ§Ã£o vazia: sÃ³ para imprimir uma mensagem. 
 
-int main(int argc, char *argv[])//função principal
+int main(int argc, char *argv[])//funÃ§Ã£o principal
 {
 	int n;
 	
 	mensagem();
-	cout <<"digite um numero"<<endl;
+	cout <<"Digite um nÃºmero"<<endl;
 	cin >> n;
-	cout<<" ";
+	
 	mensagem();
-	if (par(n))//chamou a nossa função "par"
-		cout <<"o numero " << n << " eh par!" <<endl;
+	if (par(n))//chamou a nossa funÃ§Ã£o "par"
+		cout <<"O nÃºmero " << n << " Ã© par!" <<endl;
 	
 	else
-	   	cout <<"o numero " << n << " eh impar!" <<endl;
+	   	cout <<"O nÃºmero " << n << " Ã© impar!" <<endl;
 	
 	return 0;
 }
@@ -38,7 +39,7 @@ void mensagem()
 	cout <<"Aprendendo C++ "<<endl;
 }
 
-bool par(int num) //nossa função//
+bool par(int num) //nossa funÃ§Ã£o//
 {
 	if (num % 2 == 0)
 	   	return true;
