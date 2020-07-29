@@ -3,22 +3,24 @@
 //Loop comando While
 
 #include <iostream>
+#include <locale>
 using namespace std;
 
 int main(int argc, char** argv)
 {
+setlocale(LC_ALL, "Portuguese");
 	int n =1;
 	
 	while(n<=100)
 	{
 		//if (n>50)
 		//{
-		//	break;//if break tbm para a execução do programam
+		//	break;//if break tbm para a execuÃ§Ã£o do programam
 		//}
 		cout<<n<<endl;
 		n++;	
 	}
-		cout<<"tarefa concluída"<<endl;
+		cout<<"tarefa concluÃ­da"<<endl;
 		   	
 	return 0;
 }
